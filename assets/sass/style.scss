@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+@import "components/font";
+@import "components/color";
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px !important;
+  line-height: 26px;
+  margin: 0;
+  color: $white;
+  background-color: #1a1a1a;
+  font-family: $f-regular;
+  position: relative;
+  background-image: url(../img/body_mask.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  // &::after {
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   left: 0;
+  //   bottom: 0;
+  //   width: 100%;
+  //   display: block;
+  //   content: url(../img/body_mask.png);
+  // }
+}
+
+@import "components/navbar";
+@import "components/loader";
+@import "components/banner";
+@import "components/scroll";
+@import "components/portfolio";
+
+.pc {
+  display: block;
+}
+
+.sp {
+  display: none;
+}
+
+@media screen and (max-width: 785px) {
+  .pc {
+    display: none;
+  }
+
+  .sp {
+    display: block;
+  }
+}

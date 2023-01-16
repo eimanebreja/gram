@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "greycliffcf-bold";
+  src: url("../fonts/greycliffcf-bold.otf"),
+    url("../fonts/greycliffcf-bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "greycliffcf-demibold";
+  src: url("../fonts/greycliffcf-demibold.otf"),
+    url("../fonts/greycliffcf-demibold.otf") format("opentype");
+}
+@font-face {
+  font-family: "greycliffcf-medium";
+  src: url("../fonts/greycliffcf-medium.otf"),
+    url("../fonts/greycliffcf-medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "greycliffcf-regular";
+  src: url("../fonts/greycliffcf-regular.otf"),
+    url("../fonts/greycliffcf-regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "greycliffcf-thin";
+  src: url("../fonts/greycliffcf-thin.otf"),
+    url("../fonts/greycliffcf-thin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "hoefler";
+  src: url("../fonts/hoefler.ttf"),
+    url("../fonts/hoefler.ttf") format("truetype");
+}
+$f-bold: "greycliffcf-bold";
+$f-demibold: "greycliffcf-demibold";
+$f-medium: "greycliffcf-medium";
+$f-regular: "greycliffcf-regular";
+$f-thin: "greycliffcf-thin";
+$f-italic: "hoefler";

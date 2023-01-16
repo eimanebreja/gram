@@ -1,0 +1,70 @@
+.wrapper {
+  text-align: center;
+  h1 {
+    color: #000;
+    font-size: 92px;
+    line-height: 120px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Josefin Sans", sans-serif;
+    // background: linear-gradient(to right, #000 10%, #fff 50%, #000 60%);
+    background: linear-gradient(to left, #fff 26%, #000 50%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    // background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2.5s linear infinite;
+    display: inline-block;
+  }
+
+  img {
+    margin: 0 auto;
+    width: 670px;
+  }
+
+  svg {
+    path {
+      stroke: white;
+      stroke-width: 2;
+      fill: white;
+      stroke-dasharray: 1113;
+      stroke-dashoffset: 1115;
+      animation: dash 2s linear infinite;
+    }
+    @keyframes dash {
+      0% {
+        stroke-dashoffset: 0;
+        /* works, know why */
+        fill: white;
+      }
+      20% {
+        stroke-dashoffset: 200;
+        /* works, know why */
+        fill: transparent;
+      }
+      40% {
+        stroke-dashoffset: 400;
+        /* works, know why */
+        fill: transparent;
+      }
+      60% {
+        stroke-dashoffset: 600;
+        /* works, know why */
+        fill: transparent;
+      }
+      80% {
+        stroke-dashoffset: 800;
+        /* works, know why */
+        fill: transparent;
+      }
+      100% {
+        stroke-dashoffset: 1115;
+        /* works, know why */
+        fill: white;
+      }
+    }
+  }
+}
